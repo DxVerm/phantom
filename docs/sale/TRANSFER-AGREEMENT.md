@@ -45,7 +45,7 @@ NOW, THEREFORE, in consideration of the mutual covenants and agreements herein c
 
 **1.2 "Assets"** means:
 
-(a) GitHub repository: [Repository URL]
+(a) GitHub repository: https://github.com/DxVerm/phantom
 (b) Domain names: [List any domains]
 (c) Social media accounts: [List any accounts]
 (d) Documentation and specifications
@@ -187,7 +187,7 @@ Date: _________________________
 ## EXHIBIT A: ASSET INVENTORY
 
 ### Source Code
-- GitHub Repository: [URL]
+- GitHub Repository: https://github.com/DxVerm/phantom
 - Total Lines of Code: ~50,000+ Rust
 - Test Coverage: 57+ integration tests
 

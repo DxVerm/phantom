@@ -210,15 +210,14 @@ The Ethereum Foundation's focus on public goods aligns perfectly with our missio
 
 ### Links
 
-- **GitHub**: [Repository URL]
-- **Technical Documentation**: [Link to existing docs]
-- **Whitepaper**: [Link when available]
+- **GitHub**: https://github.com/DxVerm/phantom
+- **Technical Documentation**: https://github.com/DxVerm/phantom/tree/main/docs
+- **Whitepaper**: https://github.com/DxVerm/phantom/blob/main/docs/whitepaper.md
 
 ### Contact
 
-- **Email**: [Your email]
-- **Telegram**: [Handle]
-- **Twitter**: [Handle]
+- **Email**: dxverm@pm.me
+- **GitHub**: [@dxverm](https://github.com/dxverm)
 
 ---
 

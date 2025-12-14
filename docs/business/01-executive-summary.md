@@ -110,10 +110,8 @@ PHANTOM is the first blockchain to combine Fully Homomorphic Encryption (FHE) wi
 
 ## Contact
 
-**Website**: [To be created]
-**GitHub**: [Repository link]
-**Email**: [Contact email]
-**Twitter/X**: [Handle]
+**GitHub**: https://github.com/DxVerm/phantom
+**Email**: dxverm@pm.me
 
 ---
 

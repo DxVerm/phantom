@@ -19,7 +19,7 @@ A Rust library providing post-quantum signatures (Dilithium), Fully Homomorphic 
 [To be determined - likely Delaware C-Corp or Swiss Foundation]
 
 ### Team Code Repositories
-- https://github.com/[your-username]/phantom
+- https://github.com/DxVerm/phantom
 
 ---
 
@@ -125,9 +125,8 @@ PHANTOM-Crypto fills a critical gap in the Polkadot ecosystem:
 **Lead Developer**: Daniel Jacob Vermillion
 
 ### Contact
-- **Email**: [email]
-- **Riot/Matrix**: [handle]
-- **GitHub**: [username]
+- **Email**: dxverm@pm.me
+- **GitHub**: [@dxverm](https://github.com/dxverm)
 
 ### Legal Entity
 [To be formed if grant awarded]
