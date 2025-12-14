@@ -1,0 +1,25 @@
+[package]
+name = "phantom-nova"
+version.workspace = true
+edition.workspace = true
+description = "Nova/HyperNova ZKP system for PHANTOM"
+
+[dependencies]
+ark-ff.workspace = true
+ark-ec.workspace = true
+ark-serialize.workspace = true
+ark-std.workspace = true
+ark-crypto-primitives.workspace = true
+ark-relations.workspace = true
+ark-snark.workspace = true
+ark-bls12-381.workspace = true
+ark-groth16.workspace = true
+# nova-snark.workspace = true  # Temporarily disabled due to transitive dependency issues
+blake3.workspace = true
+serde.workspace = true
+thiserror.workspace = true
+rand.workspace = true
+
+[dev-dependencies]
+criterion.workspace = true
+proptest.workspace = true

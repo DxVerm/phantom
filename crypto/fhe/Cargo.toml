@@ -1,0 +1,19 @@
+[package]
+name = "phantom-fhe"
+version.workspace = true
+edition.workspace = true
+description = "FHE operations for PHANTOM (TFHE-rs wrapper)"
+
+[dependencies]
+# Real FHE via TFHE-rs - ALWAYS enabled, no mock mode
+tfhe = { workspace = true, features = ["integer", "x86_64-unix"] }
+blake3.workspace = true
+serde.workspace = true
+thiserror.workspace = true
+hex = "0.4"
+parking_lot = "0.12"
+once_cell = "1.19"
+bincode = "1.3"
+
+[dev-dependencies]
+criterion = "0.5"

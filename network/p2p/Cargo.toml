@@ -1,0 +1,36 @@
+[package]
+name = "phantom-p2p"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "PHANTOM P2P Networking Layer using libp2p"
+
+[dependencies]
+# Networking
+libp2p = { workspace = true }
+tokio = { workspace = true }
+
+# Serialization
+serde = { workspace = true }
+serde_json = { workspace = true }
+bincode = { workspace = true }
+
+# Cryptography
+blake3 = { workspace = true }
+
+# Utilities
+thiserror = { workspace = true }
+tracing = { workspace = true }
+hex = { workspace = true }
+
+# Async
+futures = "0.3"
+async-trait = "0.1"
+
+# Random
+getrandom = "0.2"
+rand = { workspace = true }
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["rt-multi-thread", "macros", "time"] }

@@ -1,0 +1,29 @@
+[package]
+name = "phantom-wallet"
+version.workspace = true
+edition.workspace = true
+description = "PHANTOM wallet implementation"
+
+[dependencies]
+phantom-esl = { path = "../state/esl" }
+phantom-pq = { path = "../crypto/pq" }
+phantom-nova = { path = "../crypto/nova" }
+serde.workspace = true
+serde_json = { workspace = true }
+thiserror.workspace = true
+rand.workspace = true
+blake3.workspace = true
+getrandom = { version = "0.2", features = ["std"] }
+bs58 = "0.5"
+hex = "0.4"
+bip39 = "2.2"
+rand_chacha = "0.3"
+tokio = { workspace = true }
+async-trait = "0.1"
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "wallet_bench"
+harness = false

@@ -1,0 +1,31 @@
+[package]
+name = "phantom-defi"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "PHANTOM DeFi Primitives - Private AMM, Lending, and Staking"
+
+[dependencies]
+# Internal crates
+phantom-fhe = { path = "../crypto/fhe" }
+phantom-hash = { path = "../crypto/hash" }
+phantom-esl = { path = "../state/esl" }
+
+# Cryptography
+tfhe = { workspace = true }
+blake3 = { workspace = true }
+rand = { workspace = true }
+rand_chacha = { workspace = true }
+hex = { workspace = true }
+
+# Serialization
+serde = { workspace = true }
+serde_json = { workspace = true }
+bincode = { workspace = true }
+
+# Utilities
+thiserror = { workspace = true }
+
+[dev-dependencies]
+proptest = { workspace = true }

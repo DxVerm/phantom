@@ -1,0 +1,26 @@
+[package]
+name = "phantom-esl"
+version.workspace = true
+edition.workspace = true
+description = "Encrypted State Lattice - PHANTOM's blockchain replacement"
+
+[dependencies]
+blake3.workspace = true
+serde.workspace = true
+bincode.workspace = true
+thiserror.workspace = true
+rand.workspace = true
+rand_chacha.workspace = true
+hex.workspace = true
+
+# Internal dependencies
+phantom-nova = { path = "../../crypto/nova" }
+phantom-pq = { path = "../../crypto/pq" }
+phantom-fhe = { path = "../../crypto/fhe" }
+
+# Merkle trees
+merkle-cbt = "0.3"
+
+[dev-dependencies]
+criterion.workspace = true
+proptest.workspace = true

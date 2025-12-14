@@ -1,0 +1,28 @@
+[package]
+name = "phantom-contracts"
+version.workspace = true
+edition.workspace = true
+description = "Private smart contracts for PHANTOM with FHE state"
+
+[dependencies]
+# Internal dependencies
+phantom-esl = { path = "../state/esl" }
+phantom-fhe = { path = "../crypto/fhe" }
+phantom-nova = { path = "../crypto/nova" }
+
+# Serialization
+serde.workspace = true
+bincode.workspace = true
+
+# Error handling
+thiserror.workspace = true
+
+# Crypto
+blake3.workspace = true
+rand.workspace = true
+
+# Encoding
+hex = "0.4"
+
+[dev-dependencies]
+criterion.workspace = true

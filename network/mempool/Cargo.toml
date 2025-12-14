@@ -1,0 +1,30 @@
+[package]
+name = "phantom-mempool"
+version.workspace = true
+edition.workspace = true
+description = "Encrypted mempool with threshold encryption for MEV protection"
+
+[dependencies]
+phantom-cwa = { path = "../../consensus/cwa" }
+phantom-pq = { path = "../../crypto/pq" }
+blake3.workspace = true
+serde.workspace = true
+thiserror.workspace = true
+rand.workspace = true
+tokio.workspace = true
+getrandom = "0.2"
+hex = "0.4"
+
+# Real BLS12-381 for threshold encryption
+blst = "0.3"
+rand_chacha.workspace = true
+zeroize = { version = "1.7", features = ["derive"] }
+
+# Serde support for large arrays (>32 bytes)
+serde-big-array = "0.5"
+
+# Symmetric encryption for hybrid scheme
+chacha20poly1305 = "0.10"
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["rt-multi-thread", "macros"] }

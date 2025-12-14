@@ -1,0 +1,22 @@
+[package]
+name = "phantom-vrf"
+version.workspace = true
+edition.workspace = true
+description = "Verifiable Random Function for PHANTOM consensus"
+
+[dependencies]
+# Ed25519 VRF implementation
+ed25519-dalek = { version = "2.1", features = ["rand_core"] }
+curve25519-dalek = { version = "4.1", features = ["digest"] }
+sha2 = "0.10"
+
+# Utilities
+blake3.workspace = true
+serde.workspace = true
+thiserror.workspace = true
+rand.workspace = true
+rand_core = "0.6"
+hex = "0.4"
+
+[dev-dependencies]
+criterion = "0.5"

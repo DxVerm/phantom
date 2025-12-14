@@ -1,0 +1,28 @@
+[package]
+name = "phantom-genesis"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "PHANTOM genesis configuration and chain initialization"
+
+[dependencies]
+# Serialization
+serde = { workspace = true }
+serde_json = { workspace = true }
+toml = { workspace = true }
+
+# Crypto
+blake3 = { workspace = true }
+
+# Internal crates
+phantom-hash = { path = "../crypto/hash" }
+
+# Utilities
+thiserror = { workspace = true }
+tracing = { workspace = true }
+hex = { workspace = true }
+chrono = { workspace = true }
+
+[dev-dependencies]
+tempfile = "3.8"

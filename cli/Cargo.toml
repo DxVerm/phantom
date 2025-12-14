@@ -1,0 +1,54 @@
+[package]
+name = "phantom-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "PHANTOM Network Node CLI"
+
+[[bin]]
+name = "phantom"
+path = "src/main.rs"
+
+[dependencies]
+# CLI framework
+clap = { version = "4.4", features = ["derive", "env"] }
+
+# Configuration
+toml = "0.8"
+config = "0.14"
+directories = "5.0"
+
+# Async runtime
+tokio = { workspace = true }
+
+# Serialization
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+# Logging
+tracing = { workspace = true }
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+
+# Error handling
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+
+# PHANTOM components
+phantom-wallet = { path = "../wallet" }
+phantom-esl = { path = "../state/esl" }
+phantom-cwa = { path = "../consensus/cwa" }
+phantom-mempool = { path = "../network/mempool" }
+phantom-p2p = { path = "../network/p2p" }
+phantom-rpc = { path = "../rpc" }
+phantom-hash = { path = "../crypto/hash" }
+
+# Utils
+hex = { workspace = true }
+rand = { workspace = true }
+
+# HTTP client
+reqwest = { version = "0.11", features = ["json"] }
+
+[dev-dependencies]
+tempfile = "3.10"

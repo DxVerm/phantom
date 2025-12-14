@@ -1,0 +1,17 @@
+[package]
+name = "phantom-hash"
+version.workspace = true
+edition.workspace = true
+description = "Hash functions for PHANTOM (BLAKE3 + Poseidon)"
+
+[dependencies]
+blake3.workspace = true
+serde.workspace = true
+
+# Arkworks for Poseidon
+ark-ff.workspace = true
+ark-crypto-primitives = { workspace = true, features = ["sponge"] }
+ark-std.workspace = true
+
+# BN254 curve for Poseidon parameters
+ark-bn254 = "0.4"

@@ -1,0 +1,25 @@
+[package]
+name = "phantom-cwa"
+version.workspace = true
+edition.workspace = true
+description = "Cryptographic Witness Attestation consensus for PHANTOM"
+
+[dependencies]
+phantom-esl = { path = "../../state/esl" }
+phantom-pq = { path = "../../crypto/pq" }
+phantom-vrf = { path = "../../crypto/vrf" }
+blake3.workspace = true
+serde.workspace = true
+thiserror.workspace = true
+rand.workspace = true
+tokio.workspace = true
+getrandom = "0.2"
+hex = "0.4"
+
+# Real BLS12-381 threshold signatures
+blst = "0.3"
+rand_chacha.workspace = true
+zeroize = { version = "1.7", features = ["derive"] }
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["rt-multi-thread", "macros"] }

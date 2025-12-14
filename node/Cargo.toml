@@ -1,0 +1,42 @@
+[package]
+name = "phantom-node"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "PHANTOM node implementation with block production"
+
+[dependencies]
+# Internal crates
+phantom-hash = { path = "../crypto/hash" }
+phantom-esl = { path = "../state/esl" }
+phantom-cwa = { path = "../consensus/cwa" }
+phantom-p2p = { path = "../network/p2p" }
+phantom-mempool = { path = "../network/mempool" }
+phantom-rpc = { path = "../rpc" }
+phantom-storage = { path = "../storage" }
+phantom-genesis = { path = "../genesis" }
+phantom-vrf = { path = "../crypto/vrf" }
+phantom-pq = { path = "../crypto/pq" }
+
+# Async runtime
+tokio = { workspace = true }
+
+# Serialization
+serde = { workspace = true }
+serde_json = { workspace = true }
+bincode = { workspace = true }
+
+# Crypto
+blake3 = { workspace = true }
+
+# Utilities
+tracing = { workspace = true }
+thiserror = { workspace = true }
+hex = { workspace = true }
+parking_lot = "0.12"
+serde_with = { version = "3.4", features = ["base64"] }
+
+[dev-dependencies]
+tempfile = "3.8"
+tokio-test = "0.4"

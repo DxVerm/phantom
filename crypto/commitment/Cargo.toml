@@ -1,0 +1,9 @@
+[package]
+name = "phantom-commitment"
+version.workspace = true
+edition.workspace = true
+description = "Commitment schemes for PHANTOM"
+
+[dependencies]
+blake3.workspace = true
+serde.workspace = true

@@ -1,0 +1,40 @@
+[package]
+name = "phantom-rpc"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "PHANTOM JSON-RPC 2.0 Server"
+
+[dependencies]
+# JSON-RPC
+jsonrpsee = { version = "0.21", features = ["server", "macros"] }
+tower = "0.4"
+tower-http = { version = "0.5", features = ["cors"] }
+hyper = { version = "1.0", features = ["full"] }
+
+# Async runtime
+tokio = { workspace = true }
+async-trait = "0.1"
+
+# Serialization
+serde = { workspace = true }
+serde_json = { workspace = true }
+hex = { workspace = true }
+
+# Error handling
+thiserror = { workspace = true }
+
+# PHANTOM components
+phantom-wallet = { path = "../wallet" }
+phantom-esl = { path = "../state/esl" }
+phantom-cwa = { path = "../consensus/cwa" }
+phantom-mempool = { path = "../network/mempool" }
+phantom-p2p = { path = "../network/p2p" }
+phantom-hash = { path = "../crypto/hash" }
+
+# Logging
+tracing = { workspace = true }
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["rt-multi-thread", "macros"] }
